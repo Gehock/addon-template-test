@@ -6,10 +6,10 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {"CBA_main"};
         author = "";
-        authors[] = {"ACE Team", "Glowbal"};
-        authorUrl = "http://ace3mod.com";
+        authors[] = {"Zeusops""};
+        authorUrl = "http://zeusops.com";
         VERSION_CONFIG;
     };
 };
