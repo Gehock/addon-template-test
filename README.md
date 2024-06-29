@@ -3,85 +3,31 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/acemod/arma-project-template/releases/latest">
+    <a href="https://github.com/Gehock/addon-template-test/releases/latest">
         <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square" alt="ACE Project Template Version">
     </a>
-    <a href="https://github.com/acemod/arma-project-template/issues">
-        <img src="https://img.shields.io/github/issues-raw/acemod/arma-project-template.svg?style=flat-square&label=Issues" alt="ACE Project Template Issues">
+    <a href="https://github.com/Gehock/addon-template-test/issues">
+        <img src="https://img.shields.io/github/issues-raw/Gehock/addon-template-test.svg?style=flat-square&label=Issues" alt="ACE Project Template Issues">
     </a>
-    <a href="https://github.com/acemod/arma-project-template/releases">
-        <img src="https://img.shields.io/github/downloads/acemod/arma-project-template/total.svg?style=flat-square&label=Downloads" alt="ACE Project Template Downloads">
+    <a href="https://github.com/Gehock/addon-template-test/releases">
+        <img src="https://img.shields.io/github/downloads/Gehock/addon-template-test/total.svg?style=flat-square&label=Downloads" alt="ACE Project Template Downloads">
     </a>
-    <a href="https://github.com/acemod/arma-project-template/blob/master/LICENSE">
+    <a href="https://github.com/Gehock/addon-template-test/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-red.svg?style=flat-square" alt="ACE Project Template License">
-    </a>
-    <a href="https://slackin.ace3mod.com/">
-        <img src="https://slackin.ace3mod.com/badge.svg?style=flat-square&label=Slack" alt="ACE3 Slack">
-    </a>
-    <a href="https://travis-ci.org/acemod/arma-project-template">
-        <img src="https://img.shields.io/travis/acemod/arma-project-template.svg?style=flat-square&label=Build" alt="ACE Project Template Build Status">
     </a>
 </p>
 
 <p align="center">
-    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a> and <a href="https://github.com/acemod/ACE3/releases">ACE3</a>.<br/></strong></sup>
+    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/></strong></sup>
 </p>
 
-# Arma3 AddOn Project template
+# Addon Template Test
 
-A project template for Arma3 AddOn projects using the ACE3 framework. This template is based off the ACE3 project structure. It is used in projects such as [ACEX](https://github.com/acemod/ACEX) and [ACEX Artillery](https://github.com/acemod/ACEX_artillery).
-
-The project template comes with it's own implementation of tools used within the ACE project, such as build and release scripts, SQF validation scripts and more.
-
-### Development Environment
+## Development Environment
 
 See the [ACE3 documentation](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html) on setting up your development environment.
 
-
-### Usage
-
-Search and replace all mentions of the following:
-```
-proj_templ by {your_prefix}
-```
-
-```
-PROJ_TEMPL by {PROJ_TEMPL}
-```
-Note that both lower and upper case are necessary. Once done, replace the logo (`logo_proj_templ_ca.paa`) by your own. Keep the same aspect ratio and file extension (`.paa`). This is important for good results in game. Also remember to rename the logo file to `logo_{your_prefix}_ca.paa`.
-
-
-##### Example:
-
-```
-proj_templ by acex
-```
-
-```
-PROJ_TEMPL by ACEX
-```
-
-### Tooling
-
-Once that is all done, run the `setup.py` tool found in the tools directory of your project. This will create the necessary links between your Arma installation, your P Drive and your project source directory.
-
-You can use `build.py` to pack your PBOs for use during development and use `make.py` to create binarized PBOs for release.
-
-#### Releasing a binarized build
-
-You can use make to manage versioning and packing up your release version.
-
-Fresh build and package it up for a release:
-```bash
-tools/make force checkexternal release 1.0.0
-```
-
-Build just a binarized version:
-```bash
-tools/make
-```
-
-### Versioning
+## Versioning
 
 You can also manage versioning through the make tool. To do this, navigate to the `addons/main` directory. In there, is a file called `script_mod.hpp`. This contains the following:
 
@@ -95,7 +41,7 @@ You can also manage versioning through the make tool. To do this, navigate to th
 Modify the numbers in here to represent your build version. The example listed above would be: `1.0.0.0`. This version will be set in each pbo during binarizing. It will also be used in the signature file names, along the commit hash. This will make it easier to identify the exact version that is being used.
 
 
-### Using CI
+## Using CI
 
 This template comes with some basic scripts to validate and enforce parts of the ACE3 coding guidelines. You can find those scripts in the tools directory.
 
@@ -115,7 +61,7 @@ script:
 - python3 tools/config_style_checker.py
 ```
 
-### Adding new components
+## Adding new components
 
 Adding a new component to your project is done by copying the example component directory and renaming it. Follow these steps:
 

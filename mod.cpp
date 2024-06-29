@@ -1,12 +1,12 @@
 name = "Addon Template Test";
-picture = "logo_proj_templ_ca.paa";
+picture = "logo_addtest_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/Gehock/addon-template-test/";
 description = "Addon Template Test";
-logo = "logo_proj_templ_ca.paa";
-logoOver = "logo_proj_templ_ca.paa";
+logo = "logo_addtest_ca.paa";
+logoOver = "logo_addtest_ca.paa";
 tooltip = "Addon Template Test";
 tooltipOwned = "Addon Template Test";
 overview = "Addon Template Test";
 author = "Zeusops";
-overviewPicture = "logo_proj_templ_ca.paa";
+overviewPicture = "logo_addtest_ca.paa";
