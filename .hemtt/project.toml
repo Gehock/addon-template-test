@@ -1,0 +1,4 @@
+name = "Addon Template Test"
+author = "Gehock"
+prefix = "addtest"
+mainprefix = "z"
